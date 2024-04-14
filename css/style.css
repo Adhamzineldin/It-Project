@@ -48,7 +48,7 @@ main {
   position: relative;
   overflow: hidden;
   height: 100vh; /* Set height to 100% of viewport height */
-  background-image: url('../img/mainpage/background-image.jpg');
+  background-image: url('../img/main-page/background-image.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
