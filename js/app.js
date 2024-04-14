@@ -1,3 +1,4 @@
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -13,3 +14,4 @@ document.querySelectorAll('.animal-section').forEach(section => {
     window.location.href = this.getAttribute('data-link');
   });
 })
+
