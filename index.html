@@ -6,43 +6,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Main Page</title>
+  <title>Animal Types Website</title>
 
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="/img/icons/favicon.ico" sizes="any">
+  <link rel="icon" href="/img/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/icon.png">
   <meta name="theme-color" content="#fafafa">
 </head>
 <!--DO NOT TOUCH HEAD-->
 <body>
 
 <header>
-  <div class="header">
-    <p>Hello world! This is the header of the website</p>
-  </div>
-
+  <nav>
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#mammals">Mammals</a></li>
+      <li><a href="#birds">Birds</a></li>
+      <li><a href="#reptiles">Reptiles</a></li>
+      <li><a href="#amphibians">Amphibians</a></li>
+      <li><a href="#fish">Fish</a></li>
+      <li><a href="#invertebrates">Invertebrates</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="Section1">
-  <div>
-    <p>Hello world! This is the first section of the website</p>
-  </div>
+<main>
+  <!-- Introduction Section -->
+  <section id="intro" class="intro-section">
+    <div class="intro-content">
+      <h1>Welcome to Our Animal Kingdom</h1>
+      <p>Discover the wonders of the animal world!</p>
+    </div>
+  </section>
+  <!-- Mammals Section -->
+  <section id="mammals" class="animal-section" data-type="Mammals" data-link="html/mammals.html">
+    <img src="img/mainpage/mammals.jpg" alt="Mammals">
+  </section>
+  <!-- Birds Section -->
+  <section id="birds" class="animal-section" data-type="Birds" data-link="html/birds.html">
+    <img src="img/mainpage/birds.jpg" alt="Birds">
+  </section>
+  <!-- Reptiles Section -->
+  <section id="reptiles" class="animal-section" data-type="Reptiles" data-link="html/reptiles.html">
+    <img src="img/mainpage/reptiles.jpg" alt="Reptiles">
+  </section>
+  <!-- Amphibians Section -->
+  <section id="amphibians" class="animal-section" data-type="Amphibians" data-link="html/amphibians.html">
+    <img src="img/mainpage/amphibians.jpg" alt="Amphibians">
+  </section>
+  <!-- Fish Section -->
+  <section id="fish" class="animal-section" data-type="Fish" data-link="html/fish.html">
+    <img src="img/mainpage/fish.jpg" alt="Fish">
+  </section>
+  <!-- Invertebrates Section -->
+  <section id="invertebrates" class="animal-section" data-type="Invertebrates" data-link="html/invertebrates.html">
+    <img src="img/mainpage/invertebrates.jpg" alt="Invertebrates">
+  </section>
+</main>
 
-</section>
 
-<section>
-  <div class="Section2">
-    <p>Hello world! This is the second section of the website</p>
-  </div>
-
-</section>
-
-
-  <script src="js/app.js"></script>
-
+<script src="js/app.js"></script>
 </body>
 
 </html>
