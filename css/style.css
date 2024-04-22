@@ -1,3 +1,4 @@
+/* Adham Zineldin */
 /* Global styles */
 .Adham-Zineldin-body {
   font-family: Arial, sans-serif;
@@ -127,9 +128,9 @@
   transform: scale(1.05);
 }
 
-/* Add styles for the modal */
+
 .Adham-Zineldin-loginModal {
-    display: none; /* Hide the modal initially */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -137,10 +138,10 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4); /* Dark background */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal content */
+
 .Adham-Zineldin-modal-content {
     background-color: white;
     margin: 15% auto;
@@ -150,7 +151,6 @@
     border-radius: 25px;
 }
 
-/* Close button */
 .Adham-Zineldin-close {
     color: #aaa;
     float: right;
@@ -165,7 +165,7 @@
     text-decoration: none;
 }
 
-/* Form styles */
+
 .Adham-Zineldin-input-text, .Adham-Zineldin-input-password {
     width: 100%;
     padding: 8px;
@@ -188,11 +188,82 @@
     background-color: #45a049;
 }
 #userAvatar {
-      display: none; /* Initially hidden */
-      width: 30px; /* Size of avatar image */
+      display: none;
+      width: 30px;
       height: 30px;
-      border-radius: 50%; /* Circular shape */
+      border-radius: 50%;
   }
+
+/*Adham Zineldin Birds*/
+
+.Adham-Zineldin-birds-intro-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url('../img/birds/intro.jpeg');
+  background-size: cover;
+  background-position: center 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Adham-Zineldin-birds-section {
+  position: relative;
+  background: black;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Adham-Zineldin-birds-div {
+    display: flex;
+    border: 2px solid red;
+    border-radius: 0px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Adham-Zineldin-birds-div img {
+    width: 800px;
+    height: 800px;
+}
+
+.Adham-Zineldin-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.Adham-Zineldin-birds-div h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Adham-Zineldin-birds-div p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.Adham-Zineldin-read-more-button {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.Adham-Zineldin-read-more-button:hover {
+    background-color: darkred;
+}
 
 
 
