@@ -140,3 +140,39 @@ main {
 .animal-section:hover {
   transform: scale(1.05);
 }
+
+
+
+/* reptiles - ayman */
+
+.body-reptiles {
+  font-family: "Poppins, sans-serif";
+}
+
+.intro-section-reptiles {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  /* Set height to 100% of viewport height */
+  background-image: url('../img/intro-page-reptiles/brown-gecko-lizard-green-leaf.jpg');
+  background-size: 1400px 1300px;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Center content horizontally */
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+
+.intro-content-reptiles {
+  font-size: 20px;
+  /* margin: 0; */
+  text-align: left;
+  color: white;
+  z-index: 1;
+}
