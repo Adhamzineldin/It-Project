@@ -1,10 +1,12 @@
-body {
+/* Global styles */
+.Adham-Zineldin-body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header {
+/* Header */
+.Adham-Zineldin-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,87 +16,84 @@ header {
   z-index: 1000;
 }
 
-/* NAVIGATION */
-nav ul {
+/* Navigation */
+.Adham-Zineldin-nav {
+    display: flex; /* Use flexbox for the navigation bar */
+    justify-content: center; /* Center the ul in the navigation bar */
+    align-items: center; /* Align items vertically */
+    padding: 10px;
+}
+
+.Adham-Zineldin-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-nav ul li {
+.Adham-Zineldin-nav ul li {
   display: inline;
 }
 
-nav ul li a {
+.Adham-Zineldin-nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
 }
 
-nav ul li a:hover {
+.Adham-Zineldin-nav ul li a:hover {
   background-color: #555;
 }
 
-
-
-/*SECTIONS*/
-
-main {
+/* Sections */
+.Adham-Zineldin-main {
   padding-top: 60px;
 }
 
-.intro-section {
+/* Intro section */
+.Adham-Zineldin-intro-section {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  /* Set height to 100% of viewport height */
   background-image: url('../img/main-page/background-image.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Center content horizontally */
 }
 
-.intro-content {
+.Adham-Zineldin-intro-content {
   text-align: center;
   color: white;
   z-index: 1;
 }
 
-
-.intro-content h1 {
+.Adham-Zineldin-intro-content h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
 
-.intro-content p {
+.Adham-Zineldin-intro-content p {
   font-size: 18px;
 }
 
-
-
-
-
-
-.animal-section {
+/* Animal section */
+.Adham-Zineldin-animal-section {
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.animal-section img {
+.Adham-Zineldin-animal-section img {
   width: 100%;
   height: auto;
   display: block;
   z-index: 0;
-  /* Ensure image is behind the text */
 }
 
-.animal-section::before {
+.Adham-Zineldin-animal-section::before {
   content: attr(data-type);
   position: absolute;
   top: 50%;
@@ -102,77 +101,98 @@ main {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.7);
   color: gold;
-  /* Golden color */
   padding: 10px 20px;
   border-radius: 5px;
   opacity: 0;
-  /* Initially transparent */
   transition: opacity 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease, font-style 0.3s ease, color 0.3s ease;
-  /* Add transitions for font properties and color */
   font-size: 16px;
-  /* Initial font size */
   font-weight: normal;
-  /* Initial font weight */
   font-style: normal;
-  /* Initial font style */
   z-index: 1;
-  /* Ensure text is in front of the image */
 }
 
-.animal-section:hover::before {
+.Adham-Zineldin-animal-section:hover::before {
   opacity: 1;
-  /* Fully visible on hover */
   font-size: 24px;
-  /* Larger font size on hover */
   font-weight: bold;
-  /* Bold font on hover */
   font-style: italic;
-  /* Italic font on hover */
   color: goldenrod;
-  /* Golden color on hover */
 }
 
-.animal-section:hover img {
+.Adham-Zineldin-animal-section:hover img {
   filter: brightness(0.4);
-  /* Darken image on hover */
 }
 
-.animal-section:hover {
+.Adham-Zineldin-animal-section:hover {
   transform: scale(1.05);
 }
 
-
-
-/* reptiles - ayman */
-
-.body-reptiles {
-  font-family: "Poppins, sans-serif";
+/* Add styles for the modal */
+.Adham-Zineldin-loginModal {
+    display: none; /* Hide the modal initially */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark background */
 }
 
-.intro-section-reptiles {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  /* Set height to 100% of viewport height */
-  background-image: url('../img/intro-page-reptiles/brown-gecko-lizard-green-leaf.jpg');
-  background-size: 1400px 1300px;
-  background-repeat: no-repeat;
-  background-color: black;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Center content horizontally */
-  color: #fff;
-  text-align: center;
-  padding: 0 20px;
+/* Modal content */
+.Adham-Zineldin-modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 10px solid #888;
+    width: 500px;
+    border-radius: 25px;
 }
 
-
-.intro-content-reptiles {
-  font-size: 20px;
-  /* margin: 0; */
-  text-align: left;
-  color: white;
-  z-index: 1;
+/* Close button */
+.Adham-Zineldin-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
+
+.Adham-Zineldin-close:hover,
+.Adham-Zineldin-close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Form styles */
+.Adham-Zineldin-input-text, .Adham-Zineldin-input-password {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Adham-Zineldin-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.Adham-Zineldin-button:hover {
+    background-color: #45a049;
+}
+#userAvatar {
+      display: none; /* Initially hidden */
+      width: 30px; /* Size of avatar image */
+      height: 30px;
+      border-radius: 50%; /* Circular shape */
+  }
+
+
+
