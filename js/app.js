@@ -35,7 +35,7 @@ document.querySelectorAll('.Adham-Zineldin-animal-section').forEach(section => {
     window.onclick = function(event) {
         if (event.target === modal) {
             modal.style.display = 'none';
-        }
+          }
     };
 
     // Handle form submission
@@ -48,7 +48,6 @@ document.querySelectorAll('.Adham-Zineldin-animal-section').forEach(section => {
             openModalBtn.style.display = 'none';
             userAvatar.src = 'img/avatar.jpg';
             userAvatar.style.display = 'block';
-
             modal.style.display = 'none';
         } else {
             alert('Invalid username or password. Please try again.');
