@@ -216,6 +216,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .Adham-Zineldin-birds-div {
@@ -264,6 +265,61 @@
 .Adham-Zineldin-read-more-button:hover {
     background-color: darkred;
 }
+
+.Adham-Zineldin-birds-section body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+.Adham-Zineldin-birds-section h1 {
+    text-align: center;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 2px solid red; /* Set border color to red */
+    padding: 10px;
+    text-align: left;
+    color: white; /* Set text color to white for contrast */
+}
+
+.comparison-table th {
+    background-color: black; /* Set header background to black */
+    font-weight: bold;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #333; /* Set even row background to dark gray */
+}
+
+.comparison-table tr:nth-child(odd) {
+    background-color: black; /* Set odd row background to black */
+}
+
+.Adham-Zineldin-birds-section h1 {
+    text-align: center; /* Center the heading text */
+    width: 100%; /* Make the heading take up the full width of its container */
+    margin-bottom: 20px; /* Add space between the heading and the table */
+    color: white; /* Optional: Set the text color to white for better contrast */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
