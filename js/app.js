@@ -1,20 +1,31 @@
 // Main Page (Adham Zineldin)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-
-    });
-  });
-});
+function goBack() {
+  window.history.back();
+}
 
 document.querySelectorAll('.Adham-Zineldin-animal-section').forEach(section => {
   section.addEventListener('click', function () {
     window.location.href = this.getAttribute('data-link');
   });
 })
+
+function scrollToSection(event) {
+  event.preventDefault();
+  const targetId = event.target.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+  const headerOffset = document.querySelector('.Adham-Zineldin-header').offsetHeight;
+
+  // Calculate target position
+  const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+
+  window.scrollTo({top: targetPosition, behavior: 'smooth'});
+
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', scrollToSection);
+});
 
 var elements = {
   modal: document.getElementById('loginModal'),
@@ -23,7 +34,7 @@ var elements = {
   userAvatar: document.getElementById('userAvatar'),
 };
 
-// Check if the required elements exist before using them
+
 if (elements.openModalBtn && elements.modal) {
   elements.openModalBtn.onclick = function () {
     elements.modal.style.display = 'block';
@@ -36,7 +47,7 @@ if (elements.closeBtn && elements.modal) {
   };
 }
 
-// Handle form submission
+
 var loginForm = document.getElementById('loginForm');
 if (loginForm) {
   loginForm.addEventListener('submit', function (event) {
