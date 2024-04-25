@@ -3,87 +3,101 @@
 
 <!-- DO NOT TOUCH HEAD -->
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Animal Types Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="0">
 
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="">
-    <link rel="icon" href="img/icons/home.png" sizes="any">
+
+  <title>Animal Types Website</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+  <link rel="icon" href="resources/icons/home.png" sizes="any">
 </head>
 <!-- DO NOT TOUCH HEAD -->
 <body class="Adham-Zineldin-body">
 
 <header class="Adham-Zineldin-header">
-    <nav class="Adham-Zineldin-nav">
-        <!-- Navigation Links -->
-        <ul>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#mammals">Mammals</a></li>
-            <li><a href="#birds">Birds</a></li>
-            <li><a href="#reptiles">Reptiles</a></li>
-            <li><a href="#amphibians">Amphibians</a></li>
-            <li><a href="#fish">Fish</a></li>
-            <li><a href="#invertebrates">Invertebrates</a></li>
-        </ul>
+  <nav class="Adham-Zineldin-nav">
+    <!-- Navigation Links -->
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#mammals">Mammals</a></li>
+      <li><a href="#birds">Birds</a></li>
+      <li><a href="#reptiles">Reptiles</a></li>
+      <li><a href="#amphibians">Amphibians</a></li>
+      <li><a href="#fish">Fish</a></li>
+      <li><a href="#invertebrates">Invertebrates</a></li>
+    </ul>
 
-        <!-- Login Button and User Avatar -->
-        <div class="Adham-Zineldin-authSection">
-            <button id="openModalBtn" class="Adham-Zineldin-button">Login</button>
-            <img id="userAvatar" class="Adham-Zineldin-userAvatar" src="" alt="User Avatar">
-        </div>
-    </nav>
+    <!-- Login Button and User Avatar -->
+    <div class="Adham-Zineldin-authSection">
+      <button id="openModalBtn" class="Adham-Zineldin-button">Login</button>
+      <img id="userAvatar" class="Adham-Zineldin-userAvatar" src="" alt="User Avatar">
+    </div>
+  </nav>
 </header>
 
 <!-- Introduction Section -->
 <section id="intro" class="Adham-Zineldin-intro-section">
-    <div class="Adham-Zineldin-intro-content">
-        <h1>Welcome to Our Animal Kingdom</h1>
-        <p>Discover the wonders of the animal world!</p>
-    </div>
+  <div class="Adham-Zineldin-intro-content">
+    <h1>Welcome to Our Animal Kingdom</h1>
+    <p>Discover the wonders of the animal world!</p>
+  </div>
 </section>
 
 <!-- Animal Sections -->
 <section id="mammals" class="Adham-Zineldin-animal-section" data-type="Mammals" data-link="html/mammals/mammals.html">
-    <img src="img/main-page/mammals.jpg" alt="Mammals">
+  <img src="resources/img/main-page/mammals.jpg" alt="Mammals">
 </section>
 
 <section id="birds" class="Adham-Zineldin-animal-section" data-type="Birds" data-link="html/birds/birds.html">
-    <img src="img/main-page/birds.jpg" alt="Birds">
+  <img src="resources/img/main-page/birds.jpg" alt="Birds">
 </section>
 
-<section id="reptiles" class="Adham-Zineldin-animal-section" data-type="Reptiles" data-link="html/reptiles/reptiles.html">
-    <img src="img/main-page/reptiles.jpg" alt="Reptiles">
+<section id="reptiles" class="Adham-Zineldin-animal-section" data-type="Reptiles"
+         data-link="html/reptiles/reptiles.html">
+  <img src="resources/img/main-page/reptiles.jpg" alt="Reptiles">
 </section>
 
-<section id="amphibians" class="Adham-Zineldin-animal-section" data-type="Amphibians" data-link="html/amphibians/amphibians.html">
-    <img src="img/main-page/amphibians.jpg" alt="Amphibians">
+<section id="amphibians" class="Adham-Zineldin-animal-section" data-type="Amphibians"
+         data-link="html/amphibians/amphibians.html">
+  <img src="resources/img/main-page/amphibians.jpg" alt="Amphibians">
 </section>
 
 <section id="fish" class="Adham-Zineldin-animal-section" data-type="Fish" data-link="html/fish/fish.html">
-    <img src="img/main-page/fish.jpg" alt="Fish">
+  <img src="resources/img/main-page/fish.jpg" alt="Fish">
 </section>
 
-<section id="invertebrates" class="Adham-Zineldin-animal-section" data-type="Invertebrates" data-link="html/invertebrates/invertebrates.html">
-    <img src="img/main-page/invertebrates.jpg" alt="Invertebrates">
+<section id="invertebrates" class="Adham-Zineldin-animal-section" data-type="Invertebrates"
+         data-link="html/invertebrates/invertebrates.html">
+  <img src="resources/img/main-page/invertebrates.jpg" alt="Invertebrates">
 </section>
 
 <!-- Add the Login Modal -->
 <div class="Adham-Zineldin-loginModal" id="loginModal">
-    <!-- Modal content -->
-    <div class="Adham-Zineldin-modal-content">
-        <span class="Adham-Zineldin-close" id="closeBtn">&times;</span>
-        <h2>Login</h2>
-        <form id="loginForm">
-            <input type="text" class="Adham-Zineldin-input-text" id="username" name="username" placeholder="Username" required>
-            <input type="password" class="Adham-Zineldin-input-password" id="password" name="password" placeholder="Password" required>
-            <button type="submit" class="Adham-Zineldin-button">Login</button>
-        </form>
-    </div>
+  <!-- Modal content -->
+  <div class="Adham-Zineldin-modal-content">
+    <span class="Adham-Zineldin-close" id="closeBtn">&times;</span>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" class="Adham-Zineldin-input-text" id="username" name="username" placeholder="Username"
+             required>
+      <input type="password" class="Adham-Zineldin-input-password" id="password" name="password" placeholder="Password"
+             required>
+      <button type="submit" class="Adham-Zineldin-button">Login</button>
+    </form>
+  </div>
 </div>
 
 
-
-  <script src="js/app.js"></script>
+<script src="js/app.js"></script>
 </body>
+<footer>
+  <div class="Adham-Zineldin-footer-container">
+    <p>&copy; 2024 Adham Zineldin. All rights reserved.</p>
+  </div>
+</footer>
 </html>
