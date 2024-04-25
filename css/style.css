@@ -456,233 +456,233 @@
 
 /*Adham Zineldin END*/
 
-
 /*Adham Mostafa*/
 
 /*من اول*/
 .adham-mostafa * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: black;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: Arial, sans-serif;
 }
+
 .adham-mostafa header {
-    background:black;
-    color: #fff;
-    padding: 20px 0;
+  background: black;
+  color: #fff;
+  padding: 20px 0;
 }
 
 .adham-mostafa header h2 {
-    float: left;
-    color: #fff;
+  float: left;
+  color: #fff;
 }
 
 .adham-mostafa nav ul {
-    float: right;
-    list-style: none;
-}
-
-.adham-mostafa  nav ul li {
-    display: inline;
-    margin-left: 5px;
-}
-.adham-mostafa h2.tiger{
-    text-align: center;
-}
-.adham-mostafa nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-.adham-mostafa footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  .footer-links {
-    list-style-type: none;
-    padding: 0;
-  }
-  .footer-links li {
-    display: inline;
-    margin: 0 10px;
-  }
-  .footer-links li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .adham-mostafa th, .adham-mostafa td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-.adham-mostafa th {
-    background-color: #504c4c;
-}
-/*لحد هنا مش عارف اغيره*/
-.AMSp{
-    padding: 6px;
-}
-
-.AMScontainer {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-
-}
-.AMSfieldset{
-    flex: 1;
-    border: 10px solid rgb(19, 18, 18);
-    box-sizing: border-box;
-}
-
-.AMSh1{
-    text-align: center;
-    padding: 25px;
-    padding: 10px 5px;
-}
-.AMSsec1{
-    height: 300px ;
-    width: 500px;
-    color: rgb(204, 9, 9);
-    text-align: center;
-}
-#AMSphoto {
-    text-align: center;
-    display: none;
-  }
-
-.AMSbotto{
-    text-align: center;
-    display: inline-block;
-    background: #df0808;
-    color: #fff;
-    padding: 5px 5px;
-    text-decoration: none;
-    border-radius: 15px;
-    width: 250px;
-}
-#AMStable {
-    width: 60%;
-}
-
-#bg-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Ensure the video stays behind other content */
-}
-
-/*من اول*/
-.adham-mostafa  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: black;
-    font-family: Arial, sans-serif;
-}
-
-.adham-mostafa nav ul {
-    float: right;
-    list-style: none;
+  float: right;
+  list-style: none;
 }
 
 .adham-mostafa nav ul li {
-    display: inline;
-    margin-left: 50px;
+  display: inline;
+  margin-left: 5px;
+}
+
+.adham-mostafa h2.tiger {
+  text-align: center;
 }
 
 .adham-mostafa nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
+
+.adham-mostafa footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.adham-mostafa th, .adham-mostafa td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.adham-mostafa th {
+  background-color: #504c4c;
+}
+
+/*لحد هنا مش عارف اغيره*/
+.AMSp {
+  padding: 6px;
+}
+
+.AMScontainer {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+
+}
+
+.AMSfieldset {
+  flex: 1;
+  border: 10px solid rgb(19, 18, 18);
+  box-sizing: border-box;
+}
+
+.AMSh1 {
+  text-align: center;
+  padding: 25px;
+  padding: 10px 5px;
+}
+
+.AMSsec1 {
+  height: 300px;
+  width: 500px;
+  color: rgb(204, 9, 9);
+  text-align: center;
+}
+
+#AMSphoto {
+  text-align: center;
+  display: none;
+}
+
+.AMSbotto {
+  text-align: center;
+  display: inline-block;
+  background: #df0808;
+  color: #fff;
+  padding: 5px 5px;
+  text-decoration: none;
+  border-radius: 15px;
+  width: 250px;
+}
+
+#AMStable {
+  width: 60%;
+}
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Ensure the video stays behind other content */
+}
+
+/*من اول*/
+.adham-mostafa * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.adham-mostafa nav ul {
+  float: right;
+  list-style: none;
+}
+
+.adham-mostafa nav ul li {
+  display: inline;
+  margin-left: 50px;
+}
+
+.adham-mostafa nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*لحد هنا مش عارف اغيره*/
 .AMScontainer {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 
 }
-.AMSheader{
-    background:black;
-    color: #fff;
-    padding: 20px 0;
+
+.AMSheader {
+  background: black;
+  color: #fff;
+  padding: 20px 0;
 }
 
-.AMS h2{
-    float: left;
-    color: #0a6386;
+.AMS h2 {
+  float: left;
+  color: #0a6386;
 }
 
 
 #AMSbanner {
-    background: url('banner.jpg') center/cover no-repeat;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+  background: url('banner.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
 }
 
 #banner h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .AMSbtn {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 5px 5px;
-    text-decoration: none;
-    border-radius: 15px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 5px 5px;
+  text-decoration: none;
+  border-radius: 15px;
 }
 
 .AMScontaine {
-    display: flex;
-    flex-direction: row;
-    height: 130vh;
+  display: flex;
+  flex-direction: row;
+  height: 130vh;
 
- }
-
-.AMShalf{
-    flex: 1;
-    border: 10px solid rgb(107, 107, 105);
-    box-sizing: border-box;
-    padding: 50px;
 }
+
+.AMShalf {
+  flex: 1;
+  border: 10px solid rgb(107, 107, 105);
+  box-sizing: border-box;
+  padding: 50px;
+}
+
 #bg-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Ensure the video stays behind other content */
-  }
-  #MammalsAMS{
-    text-align: center;
-  }
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Ensure the video stays behind other content */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#MammalsAMS {
+  text-align: center;
+}
 
 
 /*Adham Mostafa END*/
