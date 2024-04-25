@@ -1,5 +1,7 @@
 /* Adham Zineldin */
 /* Global styles */
+
+
 .Adham-Zineldin-body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -549,7 +551,6 @@
 
 .AMSh1 {
   text-align: center;
-  padding: 25px;
   padding: 10px 5px;
 }
 
@@ -636,7 +637,7 @@
 
 
 #AMSbanner {
-  background: url('banner.jpg') center/cover no-repeat;
+  background: center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -688,9 +689,7 @@
 /*Adham Mostafa END*/
 
 
-/*IDK */
-
-
+/*IDK*/
 .container {
   max-width: 800px;
   margin: 50px auto;
@@ -718,5 +717,17 @@
   line-height: 1.5;
 }
 
-
 /*IDK END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
