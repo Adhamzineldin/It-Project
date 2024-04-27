@@ -763,7 +763,7 @@
   position: center;
   overflow: hidden;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/img/intro-page-reptiles/selective-focus-shot-armadillo-girdled-lizard.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../resources/img/intro-page-reptiles/selective-focus-shot-armadillo-girdled-lizard.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -787,7 +787,7 @@
 /* squamate section */
 
 .ayman-squamate-turtle-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/resources/img/intro-page-reptiles/desert-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/img/intro-page-reptiles/desert-background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -841,7 +841,7 @@
 }
 
 .snake-card {
-  background-image: url("/resources/img/intro-page-reptiles/snake2.jpg");
+  background-image: url("../resources/img/intro-page-reptiles/snake2.jpg");
   background-position: center;
   background-size: cover;
   width: 190px;
@@ -859,7 +859,7 @@
 }
 
 .lizard-card {
-  background-image: url("/resources/img/intro-page-reptiles/Squamates.jpg");
+  background-image: url("../resources/img/intro-page-reptiles/Squamates.jpg");
   background-position: center;
   background-size: cover;
   width: 190px;
@@ -924,7 +924,7 @@
 }
 
 .turtle-card {
-  background-image: url("/resources/img/intro-page-reptiles/Turtle.jpg");
+  background-image: url("../resources/img/intro-page-reptiles/Turtle.jpg");
   background-position: center;
   background-size: cover;
   width: 190px;
@@ -942,7 +942,7 @@
 }
 
 .tortoise-card {
-  background-image: url("/resources/img/intro-page-reptiles/turtoise.jpg");
+  background-image: url("../resources/img/intro-page-reptiles/turtoise.jpg");
   background-position: center;
   background-size: cover;
   width: 190px;
@@ -1027,7 +1027,7 @@
 /* squamates intro */
 
 .ayman-s2-intro {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(200, 200, 200, 0.2)), url("/resources/img/intro-page-reptiles/selective-focus-shot-armadillo-girdled-lizard.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(200, 200, 200, 0.2)), url("../resources/img/intro-page-reptiles/selective-focus-shot-armadillo-girdled-lizard.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1049,7 +1049,7 @@
 /* lizard section */
 
 .ayman-lizard-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/resources/img/intro-page-reptiles/1000_F_558805042_T8NbvhtkhrxPdT3760L4Bx6SzGEW9Tyx.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/img/intro-page-reptiles/1000_F_558805042_T8NbvhtkhrxPdT3760L4Bx6SzGEW9Tyx.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -1087,7 +1087,7 @@
 /* snake section */
 
 .ayman-snake-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/resources/img/intro-page-reptiles/snake.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/img/intro-page-reptiles/snake.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1197,7 +1197,7 @@
 /* intro turtle section */
 
 .intro-turtle-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/resources/img/intro-page-reptiles/Turtle.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../resources/img/intro-page-reptiles/Turtle.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
