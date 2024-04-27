@@ -719,6 +719,622 @@
 
 /*IDK END*/
 
+/* reptiles - ayman */
+
+.ayman-body-reptiles {
+  font-family: "Poppins, sans-serif";
+}
+
+.ayman-header-reptiles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.ayman-nav-reptiles ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+.ayman-nav-reptiles ul li {
+  display: inline;
+  margin: 25px;
+}
+
+.ayman-nav-reptiles ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 60px;
+  font-size: large;
+}
+
+.ayman-nav-reptiles ul li a:hover {
+  background-color: #555;
+}
+
+.ayman-intro-section-reptiles {
+  position: center;
+  overflow: hidden;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/img/intro-page-reptiles/selective-focus-shot-armadillo-girdled-lizard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* make the background fixed during scrolling */
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.ayman-intro-content-reptiles {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+
+/* squamate section */
+
+.ayman-squamate-turtle-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/resources/img/intro-page-reptiles/desert-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.ayman-squamate-section {
+  margin-left: 60px;
+  color: white;
+}
+
+.ayman-squamate-section h1 {
+  font-size: 3em;
+  text-shadow: 1px 1px #fff;
+}
+
+.ayman-squamate-section p {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.ayman-squamate-section a button {
+  width: 100px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background-color: #e5f5aa;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.ayman-squamate-section a button:hover {
+  background-color: #e5e764;
+}
+
+.ayman-squamate-card-section {
+  padding: 0 100px;
+}
+
+.ayman-squamate-card-section a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+  text-shadow: 1px 1px #fff;
+}
+
+.snake-card {
+  background-image: url("/resources/img/intro-page-reptiles/snake2.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  margin-top: 60px;
+  padding: 15px 25px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.snake-card:hover {
+  transform: translateY(-10px);
+}
+
+.lizard-card {
+  background-image: url("/resources/img/intro-page-reptiles/Squamates.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.lizard-card:hover {
+  transform: translateY(-10px);
+}
+
+/* turtle section  */
+
+.ayman-turtle-section {
+  margin-left: 60px;
+  color: white;
+}
+
+.ayman-turtle-section h1 {
+  font-size: 3em;
+  text-shadow: 1px 1px #fff;
+}
+
+.ayman-turtle-section p {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.ayman-turtle-section a button {
+  width: 100px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background-color: #e5f5aa;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.ayman-turtle-section a button:hover {
+  background-color: #e5e764;
+}
+
+.ayman-turtle-card-section {
+  padding: 0 100px;
+}
+
+.ayman-turtle-card-section a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+  text-shadow: 1px 1px #fff;
+}
+
+.turtle-card {
+  background-image: url("/resources/img/intro-page-reptiles/Turtle.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  margin-top: 60px;
+  padding: 15px 25px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.turtle-card:hover {
+  transform: translateY(-10px);
+}
+
+.tortoise-card {
+  background-image: url("/resources/img/intro-page-reptiles/turtoise.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.tortoise-card:hover {
+  transform: translateY(-10px);
+}
+
+
+/* squamates layout */
+
+.ayman-s2-body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.ayman-s2-header {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.ayman-s2-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.ayman-s2-navbar a img {
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+  transition: transform 0.6;
+}
+
+.ayman-s2-header img:hover {
+  transform: translateX(-10px);
+}
+
+
+.ayman-s2-nav ul {
+  background-color: rgb(0, 0, 0);
+  border-radius: 60px;
+  width: 550px;
+  margin-left: 600px;
+}
+
+.ayman-s2-nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 25px;
+  padding: 4px;
+}
+
+.ayman-s2-nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 6px;
+  padding: 2px;
+}
+
+.ayman-s2-nav ul li a:hover {
+  background-color: #c3db3a;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+/* squamates intro */
+
+.ayman-s2-intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(200, 200, 200, 0.2)), url("/resources/img/intro-page-reptiles/selective-focus-shot-armadillo-girdled-lizard.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.ayman-s2-intro div {
+  margin-left: 90px;
+}
+
+.ayman-s2-intro div h1 {
+  font-size: 35px;
+}
+
+/* lizard section */
+
+.ayman-lizard-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/resources/img/intro-page-reptiles/1000_F_558805042_T8NbvhtkhrxPdT3760L4Bx6SzGEW9Tyx.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.ayman-lizard-section div {
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.ayman-lizard-section div h1 {
+  font-size: 3em;
+  text-shadow: 1px 1px #fff;
+}
+
+.ayman-lizard-section div p {
+  font-size: 1.5em;
+}
+
+
+.ayman-lizard-section iframe {
+  width: 700px;
+  height: 500px;
+  margin-left: 120px;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+
+/* snake section */
+
+.ayman-snake-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/resources/img/intro-page-reptiles/snake.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+
+.ayman-snake-section div {
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.ayman-snake-section div h1 {
+  font-size: 3em;
+  text-shadow: 1px 1px #fff;
+}
+
+.ayman-snake-section div p {
+  font-size: 1.5em;
+}
+
+
+.ayman-snake-section iframe {
+  width: 700px;
+  height: 500px;
+  margin-left: 120px;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+
+
+/* squamate video */
+
+.ayman-lizard-video {
+  background-color: #e5e750;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ayman-lizard-video iframe {
+  height: 80%;
+  width: 80%;
+  margin-top: 50px;
+  border: 5px outset #504c4c;
+}
+
+
+/* turtles layout */
+
+.ayman-body-turtles {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* turtles header */
+
+.ayman-turtles-header {
+  display: flex;
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  top: 0;
+}
+
+.ayman-turtles-navbar {
+  margin-right: 200px;
+}
+
+.ayman-turtles-navbar a {
+  text-decoration: none;
+  color: #2a56cf;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding-left: 40px;
+}
+
+.ayman-turtles-navbar a:hover {
+  color: #0f2253;
+}
+
+.ayman-turtles-header img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.5;
+  margin-left: 120px;
+}
+
+.ayman-turtles-header img:hover {
+  transform: scale(1.2);
+}
+
+/* intro turtle section */
+
+.intro-turtle-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/resources/img/intro-page-reptiles/Turtle.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.intro-turtle-section div {
+  margin-top: 90px;
+  margin-left: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro-turtle-section div h1 {
+  margin-bottom: 40px;
+  font-size: 3.5em;
+  text-shadow: 1.8px 1.8px #e6e6e6;
+  color: black;
+}
+
+.intro-turtle-section div h3 {
+  max-width: 400px;
+  font-size: 1.8em;
+  color: #000000;
+}
+
+
+/* turtle section */
+
+.turtle-turtle-section {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.turtle-turtle-section div {
+  text-align: center;
+  padding: 100px;
+}
+
+.turtle-turtle-section div h1 {
+  font-size: 4em;
+}
+
+.turtle-turtle-section div p {
+  font-size: 1.2em;
+}
+
+.turtle-turtle-section img {
+  display: flex;
+  float: right;
+  width: 500px;
+  height: 100vh;
+}
+
+/* tortoise section */
+
+.tortoise-turtle-section {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tortoise-turtle-section div {
+  text-align: center;
+  padding: 100px;
+}
+
+.tortoise-turtle-section div h1 {
+  font-size: 4em;
+}
+
+
+.tortoise-turtle-section div p {
+  font-size: 1.2em;
+}
+
+.tortoise-turtle-section img {
+  display: flex;
+  float: right;
+  width: 500px;
+  height: 100vh;
+}
+
+
+/* turtle section comparison */
+
+.turtle-comparison {
+  background-color: #f8f6f6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.turtle-table h1 {
+  margin-top: 50px;
+  text-align: center;
+  color: #333;
+}
+
+.turtle-table table {
+  width: 1200px;
+  margin: auto;
+  border-collapse: collapse;
+  border: 2px solid #333;
+}
+
+.turtle-table th, td {
+  padding: 40px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #333;
+}
+
+.turtle-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.turtle-table tr:nth-child(odd) {
+  background-color: #a1acc9;
+}
+
+.turtle-table tr:hover {
+  background-color: #ffffff;
+}
+
 
 
 

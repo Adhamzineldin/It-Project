@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/resources/icons/turtle-icon.png">
+  <title>Turtles</title>
+</head>
+
+<body class="ayman-body-turtles">
+<header class="ayman-turtles-header">
+  <a href="reptiles.html"><img src="../../resources/icons/home2-removebg-preview.png" alt="homepage"></a>
+  <nav class="ayman-turtles-navbar">
+    <a href="#Intro">Intro</a>
+    <a href="#Turtle">Turtles</a>
+    <a href="#Tortoise">Tortoise</a>
+    <a href="#Compare">Comparison</a>
+  </nav>
+</header>
+
+<!-- intro section -->
+
+<section id="Intro" class="intro-turtle-section">
+  <div>
+    <h1>welcome to the turtle section</h1>
+    <h3>Turtles are reptiles with hard shells that protect them from predators.
+      They are among the oldest and most primitive groups of reptiles, having evolved millions of years ago.
+      Turtles live all over the world in almost every type of climate.
+    </h3>
+  </div>
+</section>
+
+<!-- turtle section -->
+
+<section id="Turtle" class="turtle-turtle-section">
+  <img src="../../resources/img/intro-page-reptiles/turtle-without-background.jpg" alt="turtle-pic">
+  <div>
+    <h1>Turtle</h1>
+    <p>
+      Turtles are reptiles known for their distinctive shells.
+      They belong to the order Testudines and have been around for over 200 million years.
+      Turtles are found in various habitats, including oceans, freshwater lakes, and terrestrial environments.
+      They have adapted to a wide range of diets,
+      with some being herbivores, others omnivores, and a few carnivores. Turtles are characterized by their shell,
+      which is composed of an upper carapace and a lower plastron, providing them protection from predators.
+      They lay eggs on land, and many species are known for their migrations across vast distances.
+      Turtles play important ecological roles in their ecosystems and are often considered keystone species.
+      However, many turtle species are threatened due to habitat loss, pollution, and illegal trade.
+      Conservation efforts are crucial to ensure the survival of these ancient reptiles.
+    </p>
+  </div>
+</section>
+
+<!-- tortoise section -->
+
+<section id="Tortoise" class="tortoise-turtle-section">
+  <img src="../../resources/img/intro-page-reptiles/tortoise-hot-image.jpg" alt="tortoise image">
+  <div>
+    <h1>
+      Tortoise
+    </h1>
+    <p>
+      Tortoises are terrestrial reptiles belonging to the family Testudinidae. They are characterized by their hard,
+      bony shells and stubby, elephant-like legs. Tortoises are primarily herbivorous,
+      feeding on vegetation such as grasses, leaves, fruits, and flowers. They are known for their longevity, with some
+      species living well over 100 years.
+      Tortoises are found in various habitats around the world, including deserts, grasslands, and forests.
+      They are ectothermic, relying on their environment to regulate body temperature,
+      and they often retreat into burrows or shady areas to avoid extreme heat. Tortoises play important roles in their
+      ecosystems as seed dispersers and grazers,
+      contributing to the maintenance of plant diversity. They are also popular as pets due to their docile nature and
+      unique appearance,
+      though responsible ownership requires adequate space and proper care to meet their specialized needs.
+    </p>
+  </div>
+</section>
+
+<!-- comparison table -->
+
+
+<section id="Compare" class="turtle-comparison">
+  <div class="turtle-table">
+    <h1>Turtle vs. Tortoise Comparison</h1>
+
+    <table>
+      <tr>
+        <th>Attribute</th>
+        <th>Turtle</th>
+        <th>Tortoise</th>
+      </tr>
+      <tr>
+        <td>Shell</td>
+        <td>Lighter, streamlined for swimming</td>
+        <td>Heavier, domed for protection</td>
+      </tr>
+      <tr>
+        <td>Habitat</td>
+        <td>Aquatic, freshwater or marine</td>
+        <td>Terrestrial, typically dry environments</td>
+      </tr>
+      <tr>
+        <td>Feeding</td>
+        <td>Omnivorous, diet includes plants and small animals</td>
+        <td>Herbivorous, mainly plant-based diet</td>
+      </tr>
+      <tr>
+        <td>Legs</td>
+        <td>Webbed for swimming</td>
+        <td>Sturdy, adapted for walking on land</td>
+      </tr>
+    </table>
+
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+</body>
+
+</html>
