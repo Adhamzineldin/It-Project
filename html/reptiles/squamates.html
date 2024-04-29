@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Squamates</title>
+    <link rel="icon" href="/resources/icons/lizard.ico" type="image/x-icon">
+</head>
+
+<body class="ayman-s2-body">
+    <header class="ayman-s2-header">
+        <div class="ayman-s2-navbar">
+            <a href="reptiles.html"><img rel="icon" src="/resources/icons/left_arrow-removebg-preview.png"
+                    type="image/x-icon"></a>
+            <nav class="ayman-s2-nav">
+                <ul>
+                    <li><a href="#s2-intro">Intro</a></li>
+                    <li><a href="#lizard">Lizard</a></li>
+                    <li><a href="#snake">Snake</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- intro -->
+
+    <section id="s2-intro" class="ayman-s2-intro">
+        <div>
+            <h1>Welcome to the Squamate Section!</h1>
+        </div>
+    </section>
+
+    <!-- lizard section -->
+
+    <section id="lizard" class="ayman-lizard-section">
+        <div>
+            <h1>
+                lizard
+            </h1>
+            <p>
+                Lizards are part of a group of animals known as reptiles. <br>
+                They are most closely related to snakes. In fact, some lizards, called sheltopusiks, 
+                look like snakes because they have no legs! <br> Many lizards today resemble the ancient reptiles of
+                the dinosaur era. Their ancestors appeared on Earth over 200 million years ago. 
+                In general, lizards have a small head, short neck, and long body and tail. <br>Unlike snakes 
+                , most lizards have moveable eyelids. There are currently over 4,675 lizard species, 
+                including iguanas, chameleons, geckos, Gila monsters, monitors, and skinks.
+            </p>
+        </div>
+        <iframe src="https://animalcorner.org/animals/lizards/"
+        title="lizard informtions" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+
+
+    <!-- snake section -->
+
+    <section id="snake" class="ayman-snake-section">
+        <div>
+            <h1>
+                Snake
+            </h1>
+            <p>
+                There are more than 3,000 species of snakes on the planet and they're found everywhere except in
+                Antarctica, Iceland, Ireland, Greenland, and New Zealand. About 600 species are venomous,
+                and only about 200—seven percent—are able to kill or significantly wound a human. <br>
+                Nnvenomous snakes, which range from harmless garter snakes to the not-so-harmless python, dispatch their
+                victims by swallowing them alive or constricting them to death. Whether they kill by striking <br>
+                with venom or squeezing, nearly all snakes eat their food whole, in sometimes astoundingly large portions.
+            </p>
+        </div>
+        <iframe src="https://www.nationalgeographic.com/animals/reptiles/facts/snakes-1"
+        title="snake information" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+
+    <!-- video section -->
+
+    <div class="ayman-lizard-video" id="video" >
+        <iframe src="https://www.youtube.com/embed/RYOQtB4DNgQ?si=1-WEQATIIqxonbPu"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+      
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      </script>
+      
+</body>
+
+</html>
