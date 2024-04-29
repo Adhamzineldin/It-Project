@@ -35,9 +35,9 @@
 
 /* Navigation */
 .Adham-Zineldin-nav {
-  display: flex; /* Use flexbox for the navigation bar */
-  justify-content: center; /* Center the ul in the navigation bar */
-  align-items: center; /* Align items vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 
