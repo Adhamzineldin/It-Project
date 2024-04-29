@@ -3,6 +3,30 @@ function goBack() {
   window.history.back();
 }
 
+const themeToggle = document.getElementById('theme-toggle');
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Save the preference to local storage
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+// Check the user's preference on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    const userPreference = localStorage.getItem('theme');
+
+    if (userPreference === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+  });
+}
+
+
 document.querySelectorAll('.Adham-Zineldin-animal-section').forEach(section => {
   section.addEventListener('click', function () {
     window.location.href = this.getAttribute('data-link');
@@ -24,44 +48,6 @@ document.querySelectorAll('.Adham-Zineldin-nav, .Adham-Zineldin-navigation a[hre
   link.addEventListener('click', scrollToSection);
 });
 
-var elements = {
-  modal: document.getElementById('loginModal'),
-  openModalBtn: document.getElementById('openModalBtn'),
-  closeBtn: document.getElementById('closeBtn'),
-  userAvatar: document.getElementById('userAvatar'),
-};
-
-
-if (elements.openModalBtn && elements.modal) {
-  elements.openModalBtn.onclick = function () {
-    elements.modal.style.display = 'block';
-  };
-}
-
-if (elements.closeBtn && elements.modal) {
-  elements.closeBtn.onclick = function () {
-    elements.modal.style.display = 'none';
-  };
-}
-
-
-var loginForm = document.getElementById('loginForm');
-if (loginForm) {
-  loginForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-
-    if (username === 'test' && password === 'test') {
-      elements.openModalBtn.style.display = 'none';
-      elements.userAvatar.src = '../resources/img/avatar.jpg';
-      elements.userAvatar.style.display = 'block';
-      elements.modal.style.display = 'none';
-    } else {
-      alert('Invalid username or password. Please try again.');
-    }
-  });
-}
 
 //Birds Adham Zineldin
 document.querySelectorAll('.Adham-Zineldin-read-more-button').forEach(section => {
@@ -71,13 +57,12 @@ document.querySelectorAll('.Adham-Zineldin-read-more-button').forEach(section =>
 })
 
 
-
 //Adham Mostafa
 function togglePhoto() {
-    var photo = document.getElementById("AMSphoto");
-    if (photo.style.display === "none") {
-      photo.style.display = "block";
-    } else {
-      photo.style.display = "none";
-    }
+  var photo = document.getElementById("AMSphoto");
+  if (photo.style.display === "none") {
+    photo.style.display = "block";
+  } else {
+    photo.style.display = "none";
   }
+}

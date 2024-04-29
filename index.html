@@ -5,9 +5,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="pragma" content="no-cache">
-  <meta http-equiv="expires" content="0">
 
 
   <title>Animal Types Website</title>
@@ -24,19 +21,29 @@
     <!-- Navigation Links -->
     <ul>
       <li><a href="#intro">Intro</a></li>
-      <li><a href="#mammals">Mammals</a></li>
       <li><a href="#birds">Birds</a></li>
+      <li><a href="#mammals">Mammals</a></li>
       <li><a href="#reptiles">Reptiles</a></li>
       <li><a href="#amphibians">Amphibians</a></li>
       <li><a href="#fish">Fish</a></li>
       <li><a href="#invertebrates">Invertebrates</a></li>
     </ul>
 
+    <!-- Search Form -->
+    <button id="searchIconBtn" class="search-icon-button">
+      <img src="resources/img/main-page/search_icon.png" alt="Search Icon">
+    </button>
+
+    <!-- Search Input -->
+    <input id="searchInput" class="search-input" type="text" placeholder="Search..." style="display: none;">
+
     <!-- Login Button and User Avatar -->
     <div class="Adham-Zineldin-authSection">
       <button id="openModalBtn" class="Adham-Zineldin-button">Login</button>
       <img id="userAvatar" class="Adham-Zineldin-userAvatar" src="" alt="User Avatar">
+      <button id="logoutBtn" class="Adham-Zineldin-button">Logout</button>
     </div>
+    
   </nav>
 </header>
 
@@ -49,12 +56,12 @@
 </section>
 
 <!-- Animal Sections -->
-<section id="mammals" class="Adham-Zineldin-animal-section" data-type="Mammals" data-link="html/mammals/mammals.html">
-  <img src="resources/img/main-page/mammals.jpg" alt="Mammals">
-</section>
-
 <section id="birds" class="Adham-Zineldin-animal-section" data-type="Birds" data-link="html/birds/birds.html">
   <img src="resources/img/main-page/birds.jpg" alt="Birds">
+</section>
+
+<section id="mammals" class="Adham-Zineldin-animal-section" data-type="Mammals" data-link="html/mammals/mammals.html">
+  <img src="resources/img/main-page/mammals.jpg" alt="Mammals">
 </section>
 
 <section id="reptiles" class="Adham-Zineldin-animal-section" data-type="Reptiles"
@@ -93,7 +100,10 @@
 </div>
 
 
-<script src="js/app.js"></script>
+<script src="js/mainpage.js">
+
+
+</script>
 </body>
 <footer>
   <div class="Adham-Zineldin-footer-container">
