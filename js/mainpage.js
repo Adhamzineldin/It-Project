@@ -75,7 +75,7 @@ var elements = {
 function checkAuthenticationStatus() {
   if (localStorage.getItem('isLoggedIn') === 'true') {
     elements.openModalBtn.style.display = 'none';
-    elements.userAvatar.src = '../resources/img/avatar.jpg';
+    elements.userAvatar.src = 'resources/img/avatar.jpg';
     elements.userAvatar.style.display = 'block';
     elements.modal.style.display = 'none';
     elements.logoutBtn.style.display = 'block';
