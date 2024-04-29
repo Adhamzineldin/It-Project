@@ -100,6 +100,7 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+
   transition: transform 0.3s ease;
 
 }
@@ -143,6 +144,7 @@
 
 .Adham-Zineldin-animal-section:hover {
   transform: scale(1.05);
+
 }
 
 
@@ -226,6 +228,30 @@
   order: 2;
   background-color: red;
 
+}
+
+
+.search-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+#searchInput {
+  width: 300px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-left: 10px;
+}
+
+/* Search Input Focus */
+#searchInput:focus {
+  border-color: #007bff;
 }
 
 .Adham-Zineldin-userAvatar {
@@ -476,10 +502,73 @@
   padding-left: 20px;
 }
 
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #f5f5f5;
+}
+
+
+body.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+body.dark-mode .Adham-Zineldin-header {
+  background-color: #1c2a36;
+  color: var(--text-color);
+}
+
+body.dark-mode .Adham-Zineldin-title {
+  color: var(--text-color);
+}
+
+body.dark-mode .Adham-Zineldin-navigation a {
+  color: var(--text-color);
+  background-color: #2a3a47;
+}
+
+body.dark-mode .Adham-Zineldin-navigation a:hover {
+  background-color: #1f2b34;
+}
+
+body.dark-mode .Adham-Zineldin-container {
+  background-color: #1e2730;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+}
+
+
+body.dark-mode .Adham-Zineldin-section {
+  background-color: #2a3a47;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+}
+
+body.dark-mode .Adham-Zineldin-text {
+  color: var(--text-color);
+}
+
+
+body.dark-mode .Adham-Zineldin-footer-container {
+  background-color: #222;
+  color: var(--text-color);
+}
+
+body.dark-mode .Adham-Zineldin-navigation button {
+  color: var(--text-color);
+  background-color: #2a3a47;
+}
+
+
+body.dark-mode .Adham-Zineldin-navigation button:hover {
+  background-color: #1f2b34;
+}
+
+
 /*Adham Zineldin END*/
-
 /*Adham Mostafa*/
-
 /*من اول*/
 .adham-mostafa * {
   margin: 0;

@@ -3,6 +3,30 @@ function goBack() {
   window.history.back();
 }
 
+const themeToggle = document.getElementById('theme-toggle');
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Save the preference to local storage
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+// Check the user's preference on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    const userPreference = localStorage.getItem('theme');
+
+    if (userPreference === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+  });
+}
+
+
 document.querySelectorAll('.Adham-Zineldin-animal-section').forEach(section => {
   section.addEventListener('click', function () {
     window.location.href = this.getAttribute('data-link');
