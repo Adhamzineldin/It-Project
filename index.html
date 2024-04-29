@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
 
   <title>Animal Types Website</title>
 
@@ -33,7 +33,9 @@
     <div class="Adham-Zineldin-authSection">
       <button id="openModalBtn" class="Adham-Zineldin-button">Login</button>
       <img id="userAvatar" class="Adham-Zineldin-userAvatar" src="" alt="User Avatar">
+      <button id="logoutBtn" class="Adham-Zineldin-button">Logout</button>
     </div>
+
   </nav>
 </header>
 
@@ -90,7 +92,77 @@
 </div>
 
 
-<script src="js/app.js"></script>
+<script src="js/app.js">
+  var elements = {
+    modal: document.getElementById('loginModal'),
+    openModalBtn: document.getElementById('openModalBtn'),
+    closeBtn: document.getElementById('closeBtn'),
+    userAvatar: document.getElementById('userAvatar'),
+    logoutBtn: document.getElementById('logoutBtn'), // Logout button reference
+  };
+
+  // Function to check user authentication status
+  function checkAuthenticationStatus() {
+    if (localStorage.getItem('isLoggedIn') === 'true') {
+      elements.openModalBtn.style.display = 'none';
+      elements.userAvatar.src = '../resources/img/avatar.jpg';
+      elements.userAvatar.style.display = 'block';
+      elements.modal.style.display = 'none';
+      elements.logoutBtn.style.display = 'block'; // Display the logout button
+    } else {
+      elements.openModalBtn.style.display = 'block';
+      elements.userAvatar.style.display = 'none';
+      elements.logoutBtn.style.display = 'none'; // Hide the logout button
+    }
+  }
+
+  // Call the function on page load
+  checkAuthenticationStatus();
+
+  if (elements.openModalBtn && elements.modal) {
+    elements.openModalBtn.onclick = function () {
+      elements.modal.style.display = 'block';
+    };
+  }
+
+  if (elements.closeBtn && elements.modal) {
+    elements.closeBtn.onclick = function () {
+      elements.modal.style.display = 'none';
+    };
+  }
+
+  var loginForm = document.getElementById('loginForm');
+  if (loginForm) {
+    loginForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      if (username === 'test' && password === 'test') {
+        // Set authentication status to true in local storage
+        localStorage.setItem('isLoggedIn', 'true');
+        elements.openModalBtn.style.display = 'none';
+        elements.userAvatar.src = '../resources/img/avatar.jpg';
+        elements.userAvatar.style.display = 'block';
+        elements.modal.style.display = 'none';
+        elements.logoutBtn.style.display = 'block'; // Show the logout button
+      } else {
+        alert('Invalid username or password. Please try again.');
+      }
+    });
+  }
+
+  // Logout functionality
+  if (elements.logoutBtn) {
+    elements.logoutBtn.onclick = function () {
+      // Clear local storage and reset the UI
+      localStorage.removeItem('isLoggedIn');
+      checkAuthenticationStatus();
+    };
+  }
+
+
+</script>
 </body>
 <footer>
   <div class="Adham-Zineldin-footer-container">

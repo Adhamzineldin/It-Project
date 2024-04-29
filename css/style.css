@@ -212,6 +212,26 @@
   border-radius: 50%;
 }
 
+.Adham-Zineldin-authSection {
+  display: flex;
+  align-items: center;
+}
+
+
+#openModalBtn {
+  order: 1;
+}
+
+#logoutBtn {
+  order: 2;
+  background-color: red;
+
+}
+
+.Adham-Zineldin-userAvatar {
+  order: 3;
+}
+
 /*Adham Zineldin Birds*/
 
 .Adham-Zineldin-birds-intro-section {
