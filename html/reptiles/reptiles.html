@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <title>reptiles</title>
   <link rel="icon" href="../../resources/icons/crocodile.ico" type="image/x-icon">
-
 </head>
 
 <body class="ayman-body-reptiles">
+
 <!-- header -->
 <header class="ayman-header-reptiles">
   <nav class="ayman-nav-reptiles">
@@ -22,6 +22,7 @@
       <li><a href="#ayman-intro-reptiles" class="ayman-nav-ul-li-a-reptiles">Intro</a></li>
       <li><a href="#Squamates" class="ayman-nav-ul-li-a-reptiles">Squamates</a></li>
       <li><a href="#Turtles" class="ayman-nav-ul-li-a-reptiles">Turtles</a></li>
+      <li><a href="#ayman-feedback" class="ayman-nav-ul-li-a-reptiles">Feedback</a></li>
     </ul>
   </nav>
 </header>
@@ -147,21 +148,47 @@
 </section>
 
 
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+<!-- feedback and footer seciton -->
 
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-</script>
+<section id="ayman-feedback" class="ayman-feedback-section">
+
+<!-- the feedback form -->
+
+  <div  class="ayman-reptiles-feedback-form">
+    <h2>Feedback Form</h2>
+    <form id="ayman-reptiles-feedback">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+  </div> 
+  
+  <!-- the receieved feedback -->
+  
+  <div class="ayman-reptiles-feedback-display">
+    <h2>Feedback Received</h2>
+    <ul id="ayman-feedback-list"></ul>
+  </div>
+  
+  <!-- the footer -->
+  
+  <footer class="ayman-reptiles-footer">
+    <div class="container">
+        <p>&copy; 2024 reptiles. All rights reserved.</p>
+    </div>
+  </footer>
+    
+</section>
+
+
+<!-- javascript -->
+
+<script src="/js/reptiles.js"></script>
 
 </body>
 
