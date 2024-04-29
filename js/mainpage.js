@@ -1,3 +1,4 @@
+// Adham Zineldin
 document.querySelectorAll('.Adham-Zineldin-animal-section').forEach(section => {
   section.addEventListener('click', function () {
     window.location.href = this.getAttribute('data-link');
