@@ -1680,9 +1680,28 @@ background-color: #ccc;
 
 
 
+.ayman-turtles-video  {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #a1aaca;
+}
 
+.ayman-turtles-video div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  
+}
 
-
+.ayman-turtles-video div video {
+  width: 1000px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
 
 
 
