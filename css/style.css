@@ -9,8 +9,8 @@
 }
 
 .birds-body body {
-  overflow-x: hidden; /* Hides horizontal scrolling */
-  margin: 0; /* Removes default browser margin */
+  overflow-x: hidden;
+  margin: 0;
 }
 
 .Adham-Zineldin-footer-container {
