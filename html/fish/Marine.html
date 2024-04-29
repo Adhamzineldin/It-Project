@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/Marine.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Mammals</title>
+</head>
+<body>
+    <header class="marine-header">
+        <nav>
+            <a href="fish.html"><img src="../../resources/img/fish/House_icon.png" alt="home"></a>
+            <ul>
+                <a href="#intro-marines"> <li>Intro</li></a>
+                <a href="#dolphin"> <li>Dolphin</li></a>
+                <a href="#Sharks"> <li>Sharks</li></a>
+                <a href="#whales"> <li>whale</li></a>
+                <a href="#vid"><li>Video</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro-marines" class="intro-marines">
+        <div>
+            <p>Marine mammals are found in marine ecosystems around the globe. They are a diverse group of mammals with unique physical
+            adaptations that allow them to thrive in the marine environment with extreme temperatures, depths, pressure, and
+            darkness.</p>
+        </div>
+    </section>
+
+    <section id="dolphin" class="sh-do">
+        <div class="cont-right">
+            <p><h2>Dolphins</h2>
+            <br>
+                Dolphins are small-toothed cetaceans easily recognizable by their curved mouths, which give them a permanent “smile.”
+                There are 36 dolphin species, found in every ocean. Most dolphins are marine and live in the ocean or brackish waters
+                along coastlines. There are a few species, however, like the South Asian river dolphin and the Amazon river dolphin, or
+                boto, that live in freshwater streams and rivers.
+            </p>
+        </div>
+        <div>
+            <img src="../../resources/img/fish/dolphins01.jpg" alt="Dolphine image">
+        </div>
+    </section>
+
+    <section id="Sharks" class="sh">
+        <div>
+            <img src="../../resources/img/fish/shark.jpeg" alt="shark image">
+        </div>
+        <div class="cont-left">
+            <p><h2>Sharks</h2>
+                <br>
+                Sharks star in blockbuster movies as blood-seeking villains, but in reality they're far more fascinating and complicated
+                than they're often depicted in pop culture.
+                Based on fossilized teeth and scales, scientists believe that sharks have been around for more than 400 million
+                years—long before the dinosaurs. The ocean's top predators have evolved into roughly 500 species that come in all
+                different sizes and colors and have varying diets and behavior.
+            </p>
+        </div>
+    </section>
+
+<section id="whales" class="sh-do">
+    <div class="cont-right">
+        <p><h2>Whales</h2>
+            <br>
+            Whales are the largest animals on Earth and they live in every ocean. The massive mammals range from the 600-pound dwarf
+            sperm whale to the colossal blue whale, which can weigh more than 200 tons and stretch up to 100 feet long—almost as
+            long as a professional basketball court.
+            Whales are warm-blooded creatures that nurse their young
+        </p>
+    </div>
+    <div>
+        <img src="../../resources/img/fish/orca whales.jpeg" alt="orca whales image">
+    </div>
+</section>
+
+<section id="vid" class="vid">
+    <div>
+        <iframe width="678" height="412" src="https://www.youtube.com/embed/bgiPTUy2RqI" title="Blue Whales 101 | Nat Geo Wild"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+
+
+
+<script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });</script>
+</body>
+</html>

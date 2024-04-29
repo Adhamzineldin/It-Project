@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.eyad-intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/shutterstock-445508365.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eyad-intro div {
+    color: white;
+    margin-left: 150px;
+}
+
+.eyad-intro div h1 {
+    font-size: 2em;
+    color: #57589b;
+    margin-bottom: 30px;
+}
+
+.eyad-intro div p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+.eyad-intro div h3 {
+    font-size: 2em;
+    color: #6466ad;
+    margin-bottom: 30px;
+}
+
+.eyad-intro div a button {
+    width: 120px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.eyad-intro div a button:hover {
+    transition: all 0.8;
+    transform: scale(1.06);
+    background-color: rgb(221, 149, 15);
+}
+
+.eyad-body {
+    background-color: cyan;
+}
+
+.header-eyad ul {
+    list-style: none;
+}
+
+
+.header-eyad a {
+    text-decoration: none;
+}
+
+.header-eyad nav {
+    display: flex;
+    background: linear-gradient(60deg, red, blue, cyan);
+    border-bottom: 2px solid rgb(0, 3, 194);
+    box-shadow: 0 2px 2px rgb(4, 90, 118);
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 200px;
+}
+
+.header-eyad nav ul {
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.special-list-header-eyad {
+    margin-left: 900px;
+    width: 400px;
+}
+
+.header-eyad nav ul li a {
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.header-eyad nav ul li a:hover {
+    color: aqua;
+}
+
+.header-eyad nav ul li a img {
+    width: 60px;
+    height: 60px;
+    transition: 0.5s ease;
+}
+
+.header-eyad nav ul li a img:hover {
+    transform: scale(1.1);
+}
+
+.eyad-title {
+    font-size: 2.2em;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.fish {
+    height: 100vh;
+}
+
+.fish-section {
+    text-align: center;
+}
+
+.fish-inf {
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 30px;
+    width: 340px;
+}
+
+.eyad-photo {
+    width: 340px;
+    height: 340px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.fish-inf:hover {
+    transition: all 0.8s;
+    transform: scale(1.06);
+}
+
+.fish-type {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+}
+
+
+.eyad-click  {
+    display: inline-block;
+    background-color: rgb(253, 57, 8);
+    color: rgb(246, 246, 246);
+    border-radius: 30px;
+    border: none;
+    height: 32px;
+    width: 50%;
+    margin: 0px 0px 10px 90px;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.15s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.eyad-click:hover {
+    border: 2px solid rgb(253, 57, 8);
+    background-color: white;
+    color: rgb(253, 57, 8);
+    opacity: 0.7;
+}
+
+.eyad-click:active {
+    opacity: 0.3;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    padding-top: 40px;
+    border-top: 2px solid rgb(0, 3, 194);
+    box-shadow: 0px 2px 20px rgb(4, 90, 118);
+    text-align: center;
+}
+
+.eyad-footer_content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.eyad-footer_content p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.eyad-socials li {
+    display: inline-block;
+    margin: 0 10px;
+    padding-bottom: 20px;
+}
+
+.eyad-socials a i {
+    color: white;
+    font-size: x-large;
+    transition: color 0.4s ease;
+}
+
+.eyad-socials a:hover i {
+    color: aqua
+}
+
+.eyad-footer-bottom {
+    background-color: #000;
+    height: 18.4px;
+    padding: 20px;
+}
+
+.eyad-click a{
+    color: inherit;
+    text-decoration: none;
+}
