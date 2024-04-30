@@ -72,7 +72,6 @@
   position: relative;
   overflow: hidden;
   height: 100vh;
-  background-image: url("../img/main-page/background-image.jpg");
   background-image: url('../resources/img/main-page/background-image.jpg');
   background-size: cover;
   background-position: center;
@@ -103,7 +102,6 @@
   cursor: pointer;
 
   transition: transform 0.3s ease;
-
 
 }
 
@@ -160,25 +158,10 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 
 .Adham-Zineldin-modal-content {
-  background-color: white;
-  margin: 15% auto;
-  padding: 20px;
-  border: 10px solid #888;
-  width: 500px;
-  border-radius: 25px;
   background-color: white;
   margin: 15% auto;
   padding: 20px;
@@ -193,52 +176,36 @@
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .Adham-Zineldin-close:hover,
 .Adham-Zineldin-close:focus {
   color: black;
   text-decoration: none;
-  color: black;
-  text-decoration: none;
 }
 
 
-.Adham-Zineldin-input-text,
-.Adham-Zineldin-input-password {
+.Adham-Zineldin-input-text, .Adham-Zineldin-input-password {
   width: 100%;
   padding: 8px;
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
 
-  .Adham-Zineldin-input-text,
-  .Adham-Zineldin-input-password {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+.Adham-Zineldin-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
 
-  .Adham-Zineldin-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-  }
-
-  .Adham-Zineldin-button:hover {
-    background-color: #45a049;
-  }
+.Adham-Zineldin-button:hover {
+  background-color: #45a049;
+}
 
 #userAvatar {
   display: none;
@@ -291,146 +258,116 @@
   order: 3;
 }
 
-  /*Adham Zineldin Birds*/
+/*Adham Zineldin Birds*/
 
-  .Adham-Zineldin-birds-intro-section {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    background-image: url('../resources/img/birds/intro.jpeg');
-    background-size: cover;
-    background-position: center 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.Adham-Zineldin-birds-intro-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url('../resources/img/birds/intro.jpeg');
+  background-size: cover;
+  background-position: center 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .Adham-Zineldin-birds-section {
-    position: relative;
-    background: black;
-    overflow: hidden;
-    height: 94vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Adham-Zineldin-birds-section {
+  position: relative;
+  background: black;
+  overflow: hidden;
+  height: 94vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  }
+}
 
-  .Adham-Zineldin-birds-div {
-    display: flex;
-    border: 2px solid red;
-    border-radius: 0px;
-    padding: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    border: 2px solid red;
-    border-radius: 0;
-    padding: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  }
+.Adham-Zineldin-birds-div {
+  display: flex;
+  border: 2px solid red;
+  border-radius: 0;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
 
-  .Adham-Zineldin-birds-div img {
-    width: 800px;
-    height: 800px;
-  }
+.Adham-Zineldin-birds-div img {
+  width: 800px;
+  height: 800px;
+}
 
-  .Adham-Zineldin-text-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-  }
+.Adham-Zineldin-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
 
-  .Adham-Zineldin-birds-div h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
+.Adham-Zineldin-birds-div h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
 
-  .Adham-Zineldin-birds-div p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
+.Adham-Zineldin-birds-div p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
 
-  .Adham-Zineldin-read-more-button {
-    background-color: red;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 700;
-  }
+.Adham-Zineldin-read-more-button {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
 
-  .Adham-Zineldin-read-more-button:hover {
-    background-color: darkred;
-  }
+.Adham-Zineldin-read-more-button:hover {
+  background-color: darkred;
+}
 
-  .Adham-Zineldin-birds-section body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-  }
+.Adham-Zineldin-birds-section body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
 
-  .Adham-Zineldin-birds-section h1 {
-    text-align: center;
-  }
+.Adham-Zineldin-birds-section h1 {
+  text-align: center;
+}
 
-  .comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
 
-  .comparison-table th,
-  .comparison-table td {
-    border: 2px solid red;
-    /* Set border color to red */
-    padding: 10px;
-    text-align: left;
-    color: white;
-    /* Set text color to white for contrast */
-    border: 2px solid red;
-    padding: 10px;
-    text-align: left;
-    color: white;
-  }
+.comparison-table th,
+.comparison-table td {
+  border: 2px solid red;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
 
-  .comparison-table th {
-    background-color: black;
-    /* Set header background to black */
-    font-weight: bold;
-    background-color: black;
-    font-weight: bold;
-  }
+.comparison-table th {
+  background-color: black;
+  font-weight: bold;
+}
 
-  .comparison-table tr:nth-child(even) {
-    background-color: #333;
-    /* Set even row background to dark gray */
-    background-color: #333;
-  }
+.comparison-table tr:nth-child(even) {
+  background-color: #333;
+}
 
-  .comparison-table tr:nth-child(odd) {
-    background-color: black;
-    /* Set odd row background to black */
-    background-color: black;
-  }
+.comparison-table tr:nth-child(odd) {
+  background-color: black;
+}
 
-  .Adham-Zineldin-birds-section h1 {
-    text-align: center;
-    /* Center the heading text */
-    width: 100%;
-    /* Make the heading take up the full width of its container */
-    margin-bottom: 20px;
-    /* Add space between the heading and the table */
-    color: white;
-    /* Optional: Set the text color to white for better contrast */
-  }
-
-
-
+.Adham-Zineldin-birds-section h1 {
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
@@ -516,9 +453,7 @@
   line-height: 1.6;
 }
 
-.Adham-Zineldin-image,
-.Adham-Zineldin-video,
-.Adham-Zineldin-audio {
+.Adham-Zineldin-image, .Adham-Zineldin-video, .Adham-Zineldin-audio {
   width: 100%;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -566,71 +501,6 @@
   border-left: 2px solid #3498db;
   padding-left: 20px;
 }
-
-
-body.dark-mode {
-  --background-color: #121212;
-  --text-color: #f5f5f5;
-}
-
-
-body.dark-mode {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-
-body.dark-mode .Adham-Zineldin-header {
-  background-color: #1c2a36;
-  color: var(--text-color);
-}
-
-body.dark-mode .Adham-Zineldin-title {
-  color: var(--text-color);
-}
-
-body.dark-mode .Adham-Zineldin-navigation a {
-  color: var(--text-color);
-  background-color: #2a3a47;
-}
-
-body.dark-mode .Adham-Zineldin-navigation a:hover {
-  background-color: #1f2b34;
-}
-
-body.dark-mode .Adham-Zineldin-container {
-  background-color: #1e2730;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  color: var(--text-color);
-}
-
-
-body.dark-mode .Adham-Zineldin-section {
-  background-color: #2a3a47;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  color: var(--text-color);
-}
-
-body.dark-mode .Adham-Zineldin-text {
-  color: var(--text-color);
-}
-
-
-body.dark-mode .Adham-Zineldin-footer-container {
-  background-color: #222;
-  color: var(--text-color);
-}
-
-body.dark-mode .Adham-Zineldin-navigation button {
-  color: var(--text-color);
-  background-color: #2a3a47;
-}
-
-
-body.dark-mode .Adham-Zineldin-navigation button:hover {
-  background-color: #1f2b34;
-}
-
 
 
 body.dark-mode {
@@ -928,25 +798,7 @@ body.dark-mode .Adham-Zineldin-navigation button:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Adham Mostafa END*/
-
 
 
 /*IDK*/
@@ -978,10 +830,6 @@ body.dark-mode .Adham-Zineldin-navigation button:hover {
 }
 
 /*IDK END*/
-
-
-
-
 
 
 /* reptiles - ayman */
@@ -1050,12 +898,10 @@ body.dark-mode .Adham-Zineldin-navigation button:hover {
 }
 
 
-
-
 /* squamate section */
 
 .ayman-squamate-turtle-section {
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/resources/img/intro-page-reptiles/desert-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/resources/img/intro-page-reptiles/desert-background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1096,7 +942,7 @@ body.dark-mode .Adham-Zineldin-navigation button:hover {
   background-color: #e5e764;
 }
 
-.ayman-squamate-card-section{
+.ayman-squamate-card-section {
   padding: 0 100px;
 }
 
@@ -1232,7 +1078,7 @@ body.dark-mode .Adham-Zineldin-navigation button:hover {
 
 
 .ayman-reptiles-feedback-form {
-background-color: #ccc;
+  background-color: #ccc;
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
@@ -1312,8 +1158,8 @@ background-color: #ccc;
   padding: 3px;
   background-color: #242020;
   color: #fff;
-   align-items: center;
-   justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
   display: flex;
 }
@@ -1321,7 +1167,6 @@ background-color: #ccc;
 .ayman-reptiles-footer p {
   margin: 0;
 }
-
 
 
 /* squamates layout */
@@ -1505,7 +1350,6 @@ background-color: #ccc;
 }
 
 
-
 /* turtles layout */
 
 .ayman-body-turtles {
@@ -1561,7 +1405,7 @@ background-color: #ccc;
 /* intro turtle section */
 
 .intro-turtle-section {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/resources/img/intro-page-reptiles/Turtle.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/resources/img/intro-page-reptiles/Turtle.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -1699,7 +1543,7 @@ background-color: #ccc;
   background-color: #ffffff;
 }
 
-.ayman-turtles-video  {
+.ayman-turtles-video {
   display: flex;
   height: 100vh;
   align-items: center;
@@ -1712,7 +1556,7 @@ background-color: #ccc;
   align-items: center;
   justify-content: center;
   margin-top: 60px;
-  
+
 }
 
 .ayman-turtles-video div video {
