@@ -11,8 +11,10 @@ if (themeToggle) {
     // Save the preference to local storage
     if (document.body.classList.contains('dark-mode')) {
       localStorage.setItem('theme', 'dark');
+      themeToggle.textContent = 'Toggle Light Mode';
     } else {
       localStorage.setItem('theme', 'light');
+      themeToggle.textContent = 'Toggle Dark Mode';
     }
   });
 
@@ -22,6 +24,9 @@ if (themeToggle) {
 
     if (userPreference === 'dark') {
       document.body.classList.add('dark-mode');
+      themeToggle.textContent = 'Toggle Light Mode';
+    } else {
+      themeToggle.textContent = 'Toggle Dark Mode';
     }
   });
 }
