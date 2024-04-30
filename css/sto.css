@@ -6,7 +6,7 @@
 }
 
 .eyad-intro {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/shutterstock-445508365.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/img/fish/shutterstock-445508365.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -94,7 +94,7 @@
 }
 
 .header-eyad nav ul li a:hover {
-    color: aqua;
+    color: rgb(189, 189, 189);
 }
 
 .header-eyad nav ul li a img {

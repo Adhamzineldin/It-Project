@@ -14,7 +14,6 @@
         border-bottom: 2px solid rgb(0, 3, 194);
         box-shadow: 0 2px 2px rgb(4, 90, 118);
         padding-right: 200px;
-        position: fixed;
         width: 100%;
 }
 
@@ -68,9 +67,8 @@
     height: 100vh;
     background-color: #1E0342;
     align-items: center;
-    justify-content: right;
+    justify-content:space-evenly;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .sh-do div{
@@ -79,13 +77,18 @@
     
 }
 
+.sh-do div h2 {
+    text-align: left;
+    font-size: 2em;
+    font-style: italic;
+}
+
 .sh-do div img{
     display: inline;
     width: 400px;
     height: 400px;
     border-radius: 30px;
-    box-shadow:2px 2px white;
-    margin-left: 400px;
+    box-shadow:2px 2px white;  
 }
 
 .cont-right{
@@ -101,9 +104,9 @@
 height: 100vh;
 background-color: #0E46A3;
 align-items: center;
-justify-content: right;
+justify-content: space-evenly;
 display: flex;
-flex-wrap: wrap;
+
 }
 
 .sh div {
@@ -112,13 +115,18 @@ flex-wrap: wrap;
 
 }
 
+.sh div h2 {
+    text-align: left;
+    font-size: 2em;
+    font-style: italic;
+}
+
 .sh div img {
     display: inline;
     width: 400px;
     height: 400px;
     border-radius: 30px;
-    box-shadow: 2px 2px white;
-    margin-right: 400px;
+    box-shadow: 2px 2px white;    
 }
 
 .cont-left{
