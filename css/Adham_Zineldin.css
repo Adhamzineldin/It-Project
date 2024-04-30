@@ -1,0 +1,573 @@
+/* Adham Zineldin */
+/* Global styles */
+
+
+.Adham-Zineldin-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.birds-body body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.Adham-Zineldin-footer-container {
+
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* Header */
+.Adham-Zineldin-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* Navigation */
+.Adham-Zineldin-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.Adham-Zineldin-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.Adham-Zineldin-nav ul li {
+  display: inline;
+}
+
+.Adham-Zineldin-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.Adham-Zineldin-nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Sections */
+.Adham-Zineldin-main {
+  padding-top: 60px;
+}
+
+/* Intro section */
+.Adham-Zineldin-intro-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url('../resources/img/main-page/background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Adham-Zineldin-intro-content {
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.Adham-Zineldin-intro-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.Adham-Zineldin-intro-content p {
+  font-size: 18px;
+}
+
+/* Animal section */
+.Adham-Zineldin-animal-section {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+
+}
+
+.Adham-Zineldin-animal-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 0;
+}
+
+.Adham-Zineldin-animal-section::before {
+  content: attr(data-type);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: gold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease, font-style 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  z-index: 1;
+}
+
+.Adham-Zineldin-animal-section:hover::before {
+  opacity: 1;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  color: goldenrod;
+}
+
+.Adham-Zineldin-animal-section:hover img {
+  filter: brightness(0.4);
+}
+
+.Adham-Zineldin-animal-section:hover {
+  transform: scale(1.05);
+
+}
+
+
+.Adham-Zineldin-loginModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.Adham-Zineldin-modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 10px solid #888;
+  width: 500px;
+  border-radius: 25px;
+}
+
+.Adham-Zineldin-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Adham-Zineldin-close:hover,
+.Adham-Zineldin-close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+
+.Adham-Zineldin-input-text, .Adham-Zineldin-input-password {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Adham-Zineldin-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.Adham-Zineldin-button:hover {
+  background-color: #45a049;
+}
+
+#userAvatar {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.Adham-Zineldin-authSection {
+  display: flex;
+  align-items: center;
+}
+
+
+#openModalBtn {
+  order: 1;
+}
+
+#logoutBtn {
+  order: 2;
+  background-color: red;
+
+}
+
+
+.search-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+#searchInput {
+  width: 300px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-left: 10px;
+}
+
+/* Search Input Focus */
+#searchInput:focus {
+  border-color: #007bff;
+}
+
+.Adham-Zineldin-userAvatar {
+  order: 3;
+}
+
+/*Adham Zineldin Birds*/
+
+.Adham-Zineldin-birds-intro-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url('../resources/img/birds/intro.jpeg');
+  background-size: cover;
+  background-position: center 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Adham-Zineldin-birds-section {
+  position: relative;
+  background: black;
+  overflow: hidden;
+  height: 94vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Adham-Zineldin-birds-div {
+  display: flex;
+  border: 2px solid red;
+  border-radius: 0;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Adham-Zineldin-birds-div img {
+  width: 800px;
+  height: 800px;
+}
+
+.Adham-Zineldin-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.Adham-Zineldin-birds-div h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.Adham-Zineldin-birds-div p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.Adham-Zineldin-read-more-button {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.Adham-Zineldin-read-more-button:hover {
+  background-color: darkred;
+}
+
+.Adham-Zineldin-birds-section body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+
+.Adham-Zineldin-birds-section h1 {
+  text-align: center;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 2px solid red;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+.comparison-table th {
+  background-color: black;
+  font-weight: bold;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #333;
+}
+
+.comparison-table tr:nth-child(odd) {
+  background-color: black;
+}
+
+.Adham-Zineldin-birds-section h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/*Per Animals site*/
+/* General Styles */
+.Adham-Zineldin-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fb;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.Adham-Zineldin-header {
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+}
+
+.Adham-Zineldin-title {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #ecf0f1;
+}
+
+/* Navigation Styles */
+.Adham-Zineldin-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Adham-Zineldin-navigation a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.Adham-Zineldin-navigation a:hover {
+  background-color: #34495e;
+}
+
+/* Container Styles */
+.Adham-Zineldin-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding-top: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+.Adham-Zineldin-section {
+
+  margin-top: 70px;
+  padding: 20px;
+  background-color: #e7f5f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Adham-Zineldin-heading {
+  font-size: 24px;
+  color: #2980b9;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Text and Media Styles */
+.Adham-Zineldin-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.Adham-Zineldin-image, .Adham-Zineldin-video, .Adham-Zineldin-audio {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.Adham-Zineldin-image {
+  height: 350px;
+  width: 350px;
+}
+
+.Adham-Zineldin-text {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+.Adham-Zineldin-text ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style-type: decimal;
+}
+
+.Adham-Zineldin-text li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.Adham-Zineldin-text ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  list-style-type: circle;
+}
+
+
+.Adham-Zineldin-text strong {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.Adham-Zineldin-text ol,
+.Adham-Zineldin-text ul {
+  border-left: 2px solid #3498db;
+  padding-left: 20px;
+}
+
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #f5f5f5;
+}
+
+
+body.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+body.dark-mode .Adham-Zineldin-header {
+  background-color: #1c2a36;
+  color: var(--text-color);
+}
+
+body.dark-mode .Adham-Zineldin-title {
+  color: var(--text-color);
+}
+
+body.dark-mode .Adham-Zineldin-navigation a {
+  color: var(--text-color);
+  background-color: #2a3a47;
+}
+
+body.dark-mode .Adham-Zineldin-navigation a:hover {
+  background-color: #1f2b34;
+}
+
+body.dark-mode .Adham-Zineldin-container {
+  background-color: #1e2730;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+}
+
+
+body.dark-mode .Adham-Zineldin-section {
+  background-color: #2a3a47;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+}
+
+body.dark-mode .Adham-Zineldin-text {
+  color: var(--text-color);
+}
+
+
+body.dark-mode .Adham-Zineldin-footer-container {
+  background-color: #222;
+  color: var(--text-color);
+}
+
+body.dark-mode .Adham-Zineldin-navigation button {
+  color: var(--text-color);
+  background-color: #2a3a47;
+}
+
+
+body.dark-mode .Adham-Zineldin-navigation button:hover {
+  background-color: #1f2b34;
+}
+
+#theme-toggle .dark-mode {
+
+}
+
+/*Adham Zineldin END*/

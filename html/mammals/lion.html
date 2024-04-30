@@ -6,9 +6,20 @@
        <link rel="stylesheet" href="../../css/style.css">
     </head>
     <body class="adham-mostafa" >
-      <video autoplay muted loop id="bg-video">
-        <source src="../../resources/videos/mammals/back ground adham mostafa.mp4" type="video/mp4">
-      </video>
+
+      <div class="AMScontainer1">
+        <header>
+          <button class="AMSbtn1" onclick="toggleTheme()">Light/Dark mood</button>
+          <div class="AMScontainer">
+            <ul class="footer-links">
+              <li><a href="mammals.html">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div></header>
+
         <h1 class="AMSh1"> lion </h1>
         <div class="AMSh1"><img src="../../resources/img/mammals/lion.jpg" alt="cannot be showed" lang="500 px" width="500 px"></div>
         <br>
@@ -24,7 +35,7 @@
          <P class="AMSp"><a href="#Cultural Significance">go to Cultural Significance</a></P>
          <P class="AMSp"><a href="#Conclusion">go to Conclusion</a></P>
          <P class="AMSp"><a href="#video">go to a sample video</a></P>
-         <P class="AMSp"><a href="#table">go to the table</a></P>
+         <P class="AMSp"><a href="#AMStable">go to the table</a></P>
             </fieldset>
         </div>
         <h1 class="AMSh1">introduction</h1>
@@ -50,12 +61,13 @@
         <P class="AMSp" id="Conclusion">
           The giraffe's towering presence and gentle demeanor make it a beloved symbol of Africa's wildlife heritage. However, this iconic species faces numerous threats that jeopardize its survival in the wild. By implementing effective conservation measures and raising awareness about the importance of giraffe conservation, we can ensure that these majestic creatures continue to roam the savannas for generations to come, enriching our world with their grace and beauty.
         </P>
+        <iframe src="https://ar.wikipedia.org/wiki/%D8%A3%D8%B3%D8%AF" title="Example Website" style="width: 25%; height: 500px; float: right;"></iframe>
         <h1 class="AMSh1">a sample video</h1>
             <div class="AMSh1">
                 <video controls src="../../resources/videos/mammals/lion.mp4" width="500" id="video"></video>
             </div>
             <h1 class="AMSh1">Lion Types</h1>
-
+            <div class="adham-mostafatable">
 <table id="AMStable">
   <tr>
     <th>Lion Type</th>
@@ -75,7 +87,7 @@
     <td>500 - 600</td>
     <td>Gir Forest, India</td>
   </tr>
-</table>
+</table></div>
             <div class="AMSh1">
                  <button onclick="togglePhoto()" class="AMSbotto">top here to show Animal food</button>
                  <br>
@@ -105,6 +117,6 @@
 
                   </div>
               </footer>
-            <script src="../../js/app.js"></script>
+            <script src="../../js/adham_mostafa.js"></script>
         </body>
 </html>

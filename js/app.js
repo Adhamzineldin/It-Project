@@ -1,4 +1,4 @@
-// Main Page (Adham Zineldin)
+//  (Adham Zineldin)
 function goBack() {
   window.history.back();
 }
@@ -62,12 +62,3 @@ document.querySelectorAll('.Adham-Zineldin-read-more-button').forEach(section =>
 })
 
 
-//Adham Mostafa
-function togglePhoto() {
-  var photo = document.getElementById("AMSphoto");
-  if (photo.style.display === "none") {
-    photo.style.display = "block";
-  } else {
-    photo.style.display = "none";
-  }
-}
