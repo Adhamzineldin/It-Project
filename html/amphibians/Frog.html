@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All About Frogs</title>
-    <style>
-        /* CSS frog */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All About Frogs</title>
+  <style>
+    /* CSS frog */
 
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('../../resources/img/amphibians/frog_background.jpg');
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../resources/img/amphibians/frogbackground.jpg');
 
-            background-size: 370px 800px;
-            background-position: center;
-            color: #fff;
-        }
+      background-size: cover;
 
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            text-align: center;
-        }
+      color: #fff;
+    }
 
-        img {
-            max-width: 70%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      text-align: center;
+    }
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+    img {
+      max-width: 70%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
 
-        a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+    }
 
-        a:hover {
-            color: #00ff00;
-        }
-    </style>
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: lime;
+    }
+  </style>
 </head>
 <body class="idk">
 <div class="container">
-    <h1>All About Frogs</h1>
-    <img src="../../resources/img/amphibians/frog.jpg" alt="Frog">
-    <p>
-        Frogs are amphibians known for their jumping abilities and their unique life cycle.
-    </p>
-    <p>
-        They come in various shapes, sizes, and colors, with some species even capable of changing their skin color.
-    </p>
-    <p>
-        Frogs play an essential role in the ecosystem as both predator and prey.
-        They typically start their lives as tadpoles, living underwater and breathing through gills, before
-        metamorphosing into adult frogs with lungs.
-    </p>
-    <p>
-        Frogs are found in almost every ecosystem worldwide, from tropical rainforests to deserts.
-    </p>
-    <p>
-        To learn more about frogs, visit <a href="#" id="wikiLink" target="_blank">Wikipedia's Frog Page <i
-            class="fas fa-external-link-alt"></i></a>.
-    </p>
+  <a href="../../index.html"
+     style="background: none; text-decoration: none; padding: 20px; color: lime; font-size: 30px">home button</a>
+  <h1>All About Frogs</h1>
+  <img src="../../resources/img/amphibians/frog.jpg" alt="Frog">
+  <p>
+    Frogs are amphibians known for their jumping abilities and their unique life cycle.
+  </p>
+  <p>
+    They come in various shapes, sizes, and colors, with some species even capable of changing their skin color.
+  </p>
+  <p>
+    Frogs play an essential role in the ecosystem as both predator and prey.
+    They typically start their lives as tadpoles, living underwater and breathing through gills, before
+    metamorphosing into adult frogs with lungs.
+  </p>
+  <p>
+    Frogs are found in almost every ecosystem worldwide, from tropical rainforests to deserts.
+  </p>
+  <p>
+    To learn more about frogs, visit <a href="#" id="wikiLink" target="_blank">Wikipedia's Frog Page <i
+    class="fas fa-external-link-alt"></i></a>.
+  </p>
 </div>
 <script>
-    // JavaScript code to set the Wikipedia link
-    var wikipediaLink = 'https://en.wikipedia.org/wiki/Frog';
+  // JavaScript code to set the Wikipedia link
+  var wikipediaLink = 'https://en.wikipedia.org/wiki/Frog';
 
-    var wikiLink = document.getElementById('wikiLink');
-    wikiLink.href = wikipediaLink; // Set the href attribute of the link
+  var wikiLink = document.getElementById('wikiLink');
+  wikiLink.href = wikipediaLink; // Set the href attribute of the link
 </script>
 </body>
 </html>
